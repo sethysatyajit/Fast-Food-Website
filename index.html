@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive vegetarian fast food website with recipes, calorie counter, video tutorials, and chatbot assistant. Built with HTML, CSS & JS using only icons (no images) with modern animations.">
+    <meta name="author" content="Satyajit Sethy">
+    <title>VeggieFast | Delicious Vegetarian Fast Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-carrot"></i>
+                    <span>Satyajit VeggieFast</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#nutrition">Nutrition</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-pop-in">Fast. Fresh. Vegetarian.</h1>
+                <p class="animate-pop-in">Discover delicious plant-based fast food recipes with full nutrition information</p>
+                <a href="#recipes" class="btn animate-pop-in">Explore Recipes</a>
+            </div>
+            <div class="hero-icons">
+                <div class="icon-circle animate-float">
+                    <i class="fas fa-burger"></i>
+                </div>
+                <div class="icon-circle animate-float-delay">
+                    <i class="fas fa-pizza-slice"></i>
+                </div>
+                <div class="icon-circle animate-float">
+                    <i class="fas fa-ice-cream"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="recipes">
+        <div class="container">
+            <h2>Popular Recipes</h2>
+            <div class="recipe-grid">
+                <!-- Recipe Card 1 -->
+                <div class="recipe-card" data-calories="420">
+                    <div class="recipe-icon">
+                        <i class="fas fa-burger"></i>
+                    </div>
+                    <h3>Veggie Burger</h3>
+                    <div class="recipe-info">
+                        <span><i class="fas fa-clock"></i> 25 min</span>
+                        <span><i class="fas fa-fire"></i> 420 cal</span>
+                    </div>
+                    <p>Juicy plant-based patty with fresh veggies and special sauce</p>
+                    <button class="btn-recipe">View Recipe</button>
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>1 veggie patty</li>
+                            <li>1 whole wheat bun</li>
+                            <li>Lettuce, tomato, onion</li>
+                            <li>Vegan mayo</li>
+                            <li>Spices to taste</li>
+                        </ul>
+                        <h4>Instructions:</h4>
+                        <ol>
+                            <li>Cook patty according to package</li>
+                            <li>Toast bun lightly</li>
+                            <li>Assemble with veggies and sauce</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 2 -->
+                <div class="recipe-card" data-calories="380">
+                    <div class="recipe-icon">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
+                    <h3>Veggie Pizza</h3>
+                    <div class="recipe-info">
+                        <span><i class="fas fa-clock"></i> 35 min</span>
+                        <span><i class="fas fa-fire"></i> 380 cal</span>
+                    </div>
+                    <p>Crispy crust loaded with fresh vegetables and vegan cheese</p>
+                    <button class="btn-recipe">View Recipe</button>
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>Pizza dough</li>
+                            <li>Tomato sauce</li>
+                            <li>Vegan cheese</li>
+                            <li>Bell peppers, mushrooms, onions</li>
+                            <li>Italian herbs</li>
+                        </ul>
+                        <h4>Instructions:</h4>
+                        <ol>
+                            <li>Preheat oven to 425°F</li>
+                            <li>Roll out dough and add sauce</li>
+                            <li>Add toppings and cheese</li>
+                            <li>Bake for 12-15 minutes</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 3 -->
+                <div class="recipe-card" data-calories="320">
+                    <div class="recipe-icon">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <h3>Veggie Nuggets</h3>
+                    <div class="recipe-info">
+                        <span><i class="fas fa-clock"></i> 20 min</span>
+                        <span><i class="fas fa-fire"></i> 320 cal</span>
+                    </div>
+                    <p>Crispy plant-based nuggets with dipping sauce</p>
+                    <button class="btn-recipe">View Recipe</button>
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>2 cups soy chunks</li>
+                            <li>1 cup breadcrumbs</li>
+                            <li>1 tsp garlic powder</li>
+                            <li>1 tsp onion powder</li>
+                            <li>1/2 cup flour</li>
+                        </ul>
+                        <h4>Instructions:</h4>
+                        <ol>
+                            <li>Process soy chunks into fine texture</li>
+                            <li>Mix with spices and shape into nuggets</li>
+                            <li>Coat with flour, then breadcrumbs</li>
+                            <li>Bake at 400°F for 15 minutes</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 4 -->
+                <div class="recipe-card" data-calories="290">
+                    <div class="recipe-icon">
+                        <i class="fas fa-hotdog"></i>
+                    </div>
+                    <h3>Veggie Hot Dog</h3>
+                    <div class="recipe-info">
+                        <span><i class="fas fa-clock"></i> 15 min</span>
+                        <span><i class="fas fa-fire"></i> 290 cal</span>
+                    </div>
+                    <p>Classic plant-based hot dog with all the fixings</p>
+                    <button class="btn-recipe">View Recipe</button>
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>2 veggie dogs</li>
+                            <li>2 hot dog buns</li>
+                            <li>Mustard, ketchup, relish</li>
+                            <li>Chopped onions</li>
+                        </ul>
+                        <h4>Instructions:</h4>
+                        <ol>
+                            <li>Cook veggie dogs according to package</li>
+                            <li>Toast buns lightly</li>
+                            <li>Add dogs to buns and top as desired</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 5 -->
+                <div class="recipe-card" data-calories="450">
+                    <div class="recipe-icon">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <h3>Veggie Grilled Cheese</h3>
+                    <div class="recipe-info">
+                        <span><i class="fas fa-clock"></i> 10 min</span>
+                        <span><i class="fas fa-fire"></i> 450 cal</span>
+                    </div>
+                    <p>Melty vegan cheese with tomato soup</p>
+                    <button class="btn-recipe">View Recipe</button>
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>4 slices bread</li>
+                            <li>Vegan cheese slices</li>
+                            <li>Vegan butter</li>
+                            <li>1 can tomato soup</li>
+                        </ul>
+                        <h4>Instructions:</h4>
+                        <ol>
+                            <li>Butter bread and assemble sandwiches</li>
+                            <li>Cook in pan until golden on both sides</li>
+                            <li>Heat soup according to can instructions</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 6 -->
+                <div class="recipe-card" data-calories="240">
+                    <div class="recipe-icon">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <h3>Vegan Ice Cream</h3>
+                    <div class="recipe-info">
+                        <span><i class="fas fa-clock"></i> 10 min (+freeze)</span>
+                        <span><i class="fas fa-fire"></i> 240 cal</span>
+                    </div>
+                    <p>Creamy dairy-free ice cream in minutes</p>
+                    <button class="btn-recipe">View Recipe</button>
+                    <div class="recipe-details">
+                        <h4>Ingredients:</h4>
+                        <ul>
+                            <li>2 frozen bananas</li>
+                            <li>1/2 cup coconut milk</li>
+                            <li>1 tsp vanilla extract</li>
+                            <li>Optional toppings</li>
+                        </ul>
+                        <h4>Instructions:</h4>
+                        <ol>
+                            <li>Blend all ingredients until smooth</li>
+                            <li>Freeze for 2 hours</li>
+                            <li>Add toppings and serve</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="videos" class="videos">
+        <div class="container">
+            <h2>Video Tutorials</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>5-Minute Veggie Burger</h3>
+                    <p>Learn to make the perfect veggie burger in just 5 minutes!</p>
+                    <a href="#" class="btn-video">Watch Now</a>
+                </div>
+                <div class="video-card">
+                    <div class="video-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>Healthy Veggie Pizza</h3>
+                    <p>Make this delicious veggie pizza with whole wheat crust</p>
+                    <a href="#" class="btn-video">Watch Now</a>
+                </div>
+                <div class="video-card">
+                    <div class="video-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>Vegan Fast Food Hacks</h3>
+                    <p>10 fast food hacks for vegans on the go</p>
+                    <a href="#" class="btn-video">Watch Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="nutrition">
+        <div class="container">
+            <h2>Nutrition Information</h2>
+            <div class="nutrition-info">
+                <div class="nutrition-card">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Calorie Counter</h3>
+                    <p>Check the calories in your favorite veggie fast foods</p>
+                    <div class="calorie-display">
+                        <input type="text" id="food-search" placeholder="Search food...">
+                        <div id="calorie-result">
+                            <p>Search for a food to see its calorie content</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nutrition-card">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Health Benefits</h3>
+                    <p>Plant-based fast food offers:</p>
+                    <ul>
+                        <li>Lower saturated fat</li>
+                        <li>Higher fiber content</li>
+                        <li>More vitamins & minerals</li>
+                        <li>Reduced environmental impact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About VeggieFast</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>VeggieFast is dedicated to bringing you delicious, quick, and healthy vegetarian versions of your favorite fast foods. Our recipes are designed to be easy to make, nutritious, and full of flavor.</p>
+                    <p>All our recipes are 100% plant-based and include complete nutrition information so you can make informed choices about what you eat.</p>
+                </div>
+                <div class="about-icons">
+                    <div class="icon-stat">
+                        <i class="fas fa-leaf"></i>
+                        <span>100% Vegetarian</span>
+                    </div>
+                    <div class="icon-stat">
+                        <i class="fas fa-bolt"></i>
+                        <span>Quick Recipes</span>
+                    </div>
+                    <div class="icon-stat">
+                        <i class="fas fa-heart"></i>
+                        <span>Healthy Options</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>VeggieFast Assistant</h3>
+            <button class="close-chatbot"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages">
+            <div class="bot-message">
+                <p>Hi there! I'm your VeggieFast assistant. How can I help you today?</p>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Ask me about recipes, nutrition...">
+            <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button class="chatbot-toggle">
+        <i class="fas fa-robot"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VeggieFast</h3>
+                    <p>Delicious plant-based fast food recipes for everyone.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#nutrition">Nutrition</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for weekly recipes and tips</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <a href="https://github.com/sethysatyajit" target="_blank">Satyajit Sethy</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
